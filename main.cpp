@@ -6,6 +6,10 @@ int main()
     string vardas, base, first, second;
     base="Sveikas, ";
     cin>>vardas;
+    if(vardas[vardas.size()-1]=='a'||vardas[vardas.size()-1]=='e')
+    {
+        base="Sveika, ";
+    }
     base+=vardas+"!";
 
     //cout<<base<<endl;
