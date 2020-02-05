@@ -8,7 +8,7 @@ int main()
 {
     Remelis vard;
     string vardas;
-    int n;
+    int n=0, tarpai=-1;
     vard.base="Sveikas, ";
     cin>>vardas;
     cout<<"Parasykite eiluciu skaiciu"<<endl;
@@ -17,7 +17,16 @@ int main()
         cin>>n;
         if(n<3)
         {
-            cout<<"Eiluciu skaicius per mazas";
+            cout<<"Eiluciu skaicius per mazas"<<endl;
+        }
+    }
+    cout<<"Parasykite tarpu skaiciu"<<endl;
+    while(tarpai<0)
+    {
+        cin>>tarpai;
+        if(tarpai<0)
+        {
+            cout<<"Negalimas tarpu skaicius"<<endl;
         }
     }
     system("cls");
@@ -28,19 +37,24 @@ int main()
     vard.base+=vardas+"!";
 
     //cout<<base<<endl;
-    for(int i=0;i<vard.base.size()+4;i++)
+    for(int i=0;i<vard.base.size()+2+tarpai*2;i++)
     {
         vard.outer+="*";
     }
     vard.outer+='\n';
     vard.inner+="*";
-    for(int i=0;i<vard.base.size()+2;i++)
+    for(int i=0;i<vard.base.size()+tarpai*2;i++)
     {
         vard.inner+=" ";
     }
     vard.inner+="*";
     vard.inner+='\n';
-    vard.base="* "+vard.base+" *";
+    string tarpaiToAdd;
+    for(int i=0;i<tarpai;i++)
+    {
+        tarpaiToAdd+=" ";
+    }
+    vard.base="*"+tarpaiToAdd+vard.base+tarpaiToAdd+ "*";
     vard.base+='\n';
     //cout<<vard.outer;
     for(int i=0;i<n;i++)
