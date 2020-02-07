@@ -4,7 +4,13 @@ Rėmėlio eilučių skaičius bei tarpų tarp pasisveikinimo ir rėmėlio sienos
 Programą build'inti galima naudojant Linux command line, įvedant:
 g++ -o prog main.cpp
 
-Kaip naudotis programa:
+# Releasai
+v0.1 Pirmoji programos versija, išvedamas vartotojo įvestas vardas;
+v0.2 Antroji programos versija, pasisveikinimas keičiasi priklausomai nuo to, ar vartotojas yra moteris;
+v1.0 Trečioji programos versija, eilučių duomenys perkelti į struktūrą, realizuotas eilučių skaičiaus ir tarpų skaičiaus pasirinkimas
+v1.1 Atnaujintas README failas
+
+# Kaip naudotis programa:
 1. Paleisti programą ją sukompiliavus komandine eilute ar per IDE;
 2. Įvesti naudotojo vardą, eilučių ir tarpų skaičių;
 3. Komandinė eilutė išmeta įrėmintą pasisveikinimą.
