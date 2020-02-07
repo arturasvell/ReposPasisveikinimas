@@ -5,7 +5,7 @@ Programą build'inti galima naudojant Linux command line, įvedant:
 g++ -o prog main.cpp
 
 # Releasai
-- v0.1 Pirmoji programos versija, išvedamas vartotojo įvestas vardas;
+- (v0.1)[https://github.com/arturasvell/ReposPasisveikinimas/releases/tag/v0.1] Pirmoji programos versija, išvedamas vartotojo įvestas vardas;
 - v0.2 Antroji programos versija, pasisveikinimas keičiasi priklausomai nuo to, ar vartotojas yra moteris;
 - v1.0 Trečioji programos versija, eilučių duomenys perkelti į struktūrą, realizuotas eilučių skaičiaus ir tarpų skaičiaus pasirinkimas
 - v1.1 Atnaujintas README failas
